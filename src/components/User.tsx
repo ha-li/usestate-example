@@ -23,6 +23,7 @@ export function User() {
   const [inputValue, setInputValue] = useState<string>(initUser.name);
 
 
+  // an example of destructure, we have a user, but only interested in the name.
   function printUserName({name}: User) {
     console.log(`The user name is ${name}`);
   }
